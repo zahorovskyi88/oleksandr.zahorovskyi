@@ -1,4 +1,4 @@
-package com.zahorovskyi;
+package com.zahorovskyi.crypto.central;
 
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public class Constants {
             '.', ',', '«', '»', '"', '\'', ':', '!', '?', ' '));
 
      public static final List<Character> SIGN = new ArrayList<>(Arrays.asList(
-             '.', ',', '«', '»', '"', '\'', ':', '!', '?'));
+             '.', ',', '»', ':', '!', '?'));
 
      public static final String DECRYPT = "DECRYPT";
      public static final String ENCRYPT = "ENCRYPT";

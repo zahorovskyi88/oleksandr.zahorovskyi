@@ -1,12 +1,15 @@
-package com.zahorovskyi;
+package com.zahorovskyi.crypto.modes;
 
+
+import com.zahorovskyi.crypto.central.Constants;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HandlerCipher {
 
-    List<String> transformation(List<String> allText, int key, String command) {
+    public List<String> transformation(List<String> allText, int key, String command) {
+        key = key % Constants.DICTIONARY.size();
         if (Constants.DECRYPT.equals(command)) {
             key = Constants.DICTIONARY.size() - key;
         }

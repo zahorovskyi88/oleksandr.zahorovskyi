@@ -1,4 +1,4 @@
-package com.zahorovskyi;
+package com.zahorovskyi.crypto.utility;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,11 +7,11 @@ import java.util.List;
 
 public class FileService {
 
-    List<String> read(String fileName) throws IOException {
+    public List<String> read(String fileName) throws IOException {
         Path sourceFile = Path.of(fileName);
         return Files.readAllLines(sourceFile);
     }
-    void write(String command, String fileName, List<String> allTextModify) throws IOException {
+    public void write(String command, String fileName, List<String> allTextModify) throws IOException {
         Path fileDest = createNameFileDest(command, fileName);
         Files.write(fileDest, allTextModify);
     }

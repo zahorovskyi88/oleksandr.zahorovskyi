@@ -23,7 +23,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.zahorovskyi.Main</mainClass>
+                            <mainClass>com.zahorovskyi.crypto.central.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
